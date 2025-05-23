@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stephen Kibet - Software Engineer</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+<link rel="icon" href="favicon.png" type="image/png">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#0EA5E9',
+secondary: '#64748B'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+body { font-family: 'Inter', sans-serif; }
+.hero-bg {
+background-image: linear-gradient(to right, rgba(255,255,255,1) 30%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.8) 60%, rgba(255,255,255,0.1) 80%), url('https://readdy.ai/api/search-image?query=modern%20minimalist%20workspace%20with%20elegant%20desk%20setup%2C%20soft%20natural%20lighting%2C%20clean%20and%20organized%20environment%20with%20subtle%20tech%20elements%2C%20professional%20atmosphere%2C%20muted%20color%20palette%2C%20high-end%20photography%20style&width=1920&height=1080&seq=1&orientation=landscape');
+background-size: cover;
+background-position: center;
+}
+</style>
+</head>
+<body class="bg-white">
+<header class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-sm z-50 border-b border-gray-100">
+<nav class="relative flex items-center justify-between px-6 h-16">
+<a href="#home" class="text-2xl font-['Pacifico'] text-gray-900 hover:text-primary/90 transition-colors">Stephen Kibet</a>
+<div class="hidden md:flex items-center gap-8">
+<a href="#home" class="text-primary font-medium">Home</a>
+<a href="#about" class="text-gray-600 hover:text-primary transition-colors">About</a>
+<a href="#projects" class="text-gray-600 hover:text-primary transition-colors">Projects</a>
+<a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+<a href="#contact" class="!rounded-button bg-primary text-white px-6 py-2 font-medium hover:bg-primary/90 transition-colors">Let's Talk</a>
+</div>
+<button id="mobileMenuBtn" class="md:hidden w-10 h-10 flex items-center justify-center">
+<i class="ri-menu-line text-xl"></i>
+</button>
+<div id="mobileMenu" class="absolute top-full left-0 right-0 bg-white border-b border-gray-100 py-4 px-6 hidden md:hidden">
+<div class="flex flex-col gap-4">
+<a href="#home" class="text-primary font-medium">Home</a>
+<a href="#about" class="text-gray-600 hover:text-primary transition-colors">About</a>
+<a href="#projects" class="text-gray-600 hover:text-primary transition-colors">Projects</a>
+<a href="#contact" class="text-gray-600 hover:text-primary transition-colors">Contact</a>
+<a href="#contact" class="!rounded-button bg-primary text-white px-6 py-2 font-medium hover:bg-primary/90 transition-colors text-center">Let's Talk</a>
+</div>
+</div>
+</nav>
+</header>
+<main class="pt-16">
+<section id="home" class="hero-bg min-h-[calc(100vh-4rem)] flex items-center">
+<div class="container mx-auto px-6 py-20">
+<div class="max-w-2xl">
+<h1 class="text-5xl md:text-6xl font-bold text-gray-900 leading-tight mb-6">
+Crafting Digital Experiences with Purpose
+</h1>
+<p class="text-xl text-gray-600 mb-8 leading-relaxed">
+Junior Software Engineer specializing in building exceptional digital experiences. With  years of experience in full-stack development and a passion for clean, efficient code.
+</p>
+<div class="flex gap-4">
+<a href="#projects" class="!rounded-button bg-primary text-white px-8 py-3 font-medium hover:bg-primary/90 transition-colors">View Projects</a>
+<a href="#contact" class="!rounded-button border border-gray-200 text-gray-700 px-8 py-3 font-medium hover:bg-white-50 transition-colors">Contact Me</a>
+</div>
+</div>
+</div>
+</section>
+<section id="about" class="py-24 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<img src="steve.jpg" alt="Stephen Kibet" class="rounded-lg shadow-lg w-full h-[600px] object-cover object-center">
+</div>
+<div>
+<h2 class="text-3xl font-bold text-gray-900 mb-6">About Me</h2>
+<p class="text-gray-600 mb-6 leading-relaxed">
+I'm a Junior Software Engineer based in Eldoret with a passion for building innovative digital solutions. With expertise in both frontend and backend development, I create scalable applications that solve real-world problems.
+</p>
+<div class="mb-8">
+<h3 class="text-lg font-semibold text-gray-900 mb-4">Tech Stack</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 border border-gray-200">React</span>
+<span class="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 border border-gray-200">Node.js</span>
+<span class="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 border border-gray-200">TypeScript</span>
+<span class="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 border border-gray-200">Python</span>
+<span class="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 border border-gray-200">AWS</span>
+</div>
+</div>
+<div class="flex gap-4">
+<a href="#itskibet" class="w-10 h-10 flex items-center justify-center bg-white rounded-full border border-gray-200 hover:bg-gray-50 transition-colors">
+<i class="ri-github-line text-gray-700"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center bg-white rounded-full border border-gray-200 hover:bg-gray-50 transition-colors">
+    <i class="ri-linkedin-line text-gray-700"></i>
+</a>
+    <a href="#" class="w-10 h-10 flex items-center justify-center bg-white rounded-full border border-gray-200 hover:bg-gray-50 transition-colors">
+    <i class="ri-twitter-x-line text-gray-700"></i>
+</a>
+    <a href="https://instagram.com/yourusername" target="_blank" class="w-10 h-10 flex items-center justify-center bg-white rounded-full border border-gray-200 hover:bg-gray-50 transition-colors">
+    <i class="ri-instagram-line text-gray-700 text-xl"></i>
+    </a>
+      <a href="https://facebook.com/kibet.stephen.142" target="_blank" class="w-10 h-10 flex items-center justify-center bg-white rounded-full border border-gray-200 hover:bg-gray-50 transition-colors">
+    <i class="ri-facebook-fill text-gray-700 text-xl"></i>
+  </a>
+    <a href="https://wa.me/254115053701" target="_blank" class="w-10 h-10 flex items-center justify-center bg-white rounded-full border border-gray-200 hover:bg-gray-50 transition-colors">
+    <i class="ri-whatsapp-line text-gray-700 text-xl"></i>
+  </a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="projects" class="py-24">
+<div class="container mx-auto px-6">
+<h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Featured Projects</h2>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow">
+<img src="https://readdy.ai/api/search-image?query=modern%20web%20application%20dashboard%20interface%2C%20clean%20design%2C%20data%20visualization%2C%20professional%20UI%20layout%2C%20light%20theme&width=600&height=400&seq=3&orientation=landscape" alt="Project 1" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">Enterprise Dashboard</h3>
+<p class="text-gray-600 mb-4">A comprehensive analytics dashboard for enterprise clients with real-time data visualization.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-600">React</span>
+<span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-600">D3.js</span>
+<span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-600">GraphQL</span>
+</div>
+<a href="#projects" class="text-primary font-medium hover:text-primary/90 transition-colors">View Project →</a>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow">
+<img src="https://readdy.ai/api/search-image?query=mobile%20app%20interface%20design%20for%20e-commerce%2C%20modern%20minimal%20style%2C%20product%20showcase%2C%20clean%20layout&width=600&height=400&seq=4&orientation=landscape" alt="Project 2" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">E-commerce Platform</h3>
+<p class="text-gray-600 mb-4">A full-featured e-commerce platform with real-time inventory management and analytics.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-600">Next.js</span>
+<span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-600">Node.js</span>
+<span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-600">MongoDB</span>
+</div>
+<a href="#projects" class="text-primary font-medium hover:text-primary/90 transition-colors">View Project →</a>
+</div>
+</div>
+<div class="bg-white rounded-lg overflow-hidden border border-gray-100 hover:shadow-lg transition-shadow">
+<img src="https://readdy.ai/api/search-image?query=AI%20powered%20chatbot%20interface%2C%20modern%20tech%20design%2C%20conversation%20flow%20visualization%2C%20clean%20minimal%20style&width=600&height=400&seq=5&orientation=landscape" alt="Project 3" class="w-full h-48 object-cover">
+<div class="p-6">
+<h3 class="text-xl font-semibold text-gray-900 mb-2">AI Chat Assistant</h3>
+<p class="text-gray-600 mb-4">An intelligent chatbot platform powered by machine learning for customer support.</p>
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-600">Python</span>
+<span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-600">TensorFlow</span>
+<span class="px-3 py-1 bg-gray-100 rounded-full text-xs font-medium text-gray-600">FastAPI</span>
+</div>
+<a href="#projects" class="text-primary font-medium hover:text-primary/90 transition-colors">View Project →</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="contact" class="py-24 bg-gray-50">
+<div class="container mx-auto px-6">
+<div class="max-w-2xl mx-auto">
+<h2 class="text-3xl font-bold text-gray-900 mb-12 text-center">Get in Touch</h2>
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Name</label>
+<input type="text" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors" placeholder="Your name">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+<input type="email" class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors" placeholder="your@email.com">
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Message</label>
+<textarea class="w-full px-4 py-3 rounded-lg border border-gray-200 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-colors h-32" placeholder="Your message"></textarea>
+</div>
+<button type="submit" class="w-full !rounded-button bg-primary text-white px-6 py-3 font-medium hover:bg-primary/90 transition-colors">Send Message</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-6">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<div class="mb-8 md:mb-0">
+<a href="#" class="text-2xl font-['Pacifico']">Stephen Kibet</a>
+<p class="mt-2 text-gray-400">Building digital solutions with purpose</p>
+</div>
+<div class="flex gap-6">
+<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:border-gray-500 transition-colors">
+<i class="ri-github-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:border-gray-500 transition-colors">
+<i class="ri-linkedin-line"></i>
+</a>
+<a href="#" class="w-10 h-10 flex items-center justify-center rounded-full border border-gray-700 hover:border-gray-500 transition-colors">
+<i class="ri-twitter-x-line"></i>
+</a>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+<p>© 2025 Stephen Kibet. All rights reserved.</p>
+</div>
+</div>
+</footer>
+<button id="backToTop" class="fixed bottom-8 right-8 w-12 h-12 bg-primary text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all hover:bg-primary/90">
+<i class="ri-arrow-up-line text-xl"></i>
+</button>
+<script>
+let mobileMenuOpen = false;
+
+function initMobileMenu() {
+  const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  const menuIcon = mobileMenuBtn?.querySelector('i');
+
+  if (!mobileMenuBtn || !mobileMenu || !menuIcon) return;
+
+  mobileMenuBtn.addEventListener('click', () => {
+    mobileMenuOpen = !mobileMenuOpen;
+    mobileMenu.classList.toggle('hidden', !mobileMenuOpen);
+    menuIcon.className = mobileMenuOpen ? 'ri-close-line text-xl' : 'ri-menu-line text-xl';
+  });
+
+  document.addEventListener('click', (e) => {
+    if (mobileMenuOpen && !mobileMenuBtn.contains(e.target) && !mobileMenu.contains(e.target)) {
+      mobileMenuOpen = false;
+      mobileMenu.classList.add('hidden');
+      menuIcon.className = 'ri-menu-line text-xl';
+    }
+  });
+}
+
+function initSmoothScroll() {
+  const navLinks = document.querySelectorAll('a[href^="#"]');
+  if (!navLinks.length) return;
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const targetId = this.getAttribute('href');
+      if (!targetId) return;
+
+      const targetElement = document.querySelector(targetId);
+      if (!targetElement) return;
+
+      const headerOffset = 64;
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    });
+  });
+}
+
+function initBackToTop() {
+  const backToTop = document.getElementById('backToTop');
+  if (!backToTop) return;
+
+  let scrollThrottleTimer;
+  
+  window.addEventListener('scroll', () => {
+    if (scrollThrottleTimer) return;
+    
+    scrollThrottleTimer = setTimeout(() => {
+      backToTop.classList.toggle('opacity-0', window.scrollY <= 300);
+      backToTop.classList.toggle('invisible', window.scrollY <= 300);
+      scrollThrottleTimer = null;
+    }, 100);
+  });
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  try {
+    initMobileMenu();
+    initSmoothScroll();
+    initBackToTop();
+  } catch (error) {
+    console.error('An error occurred while initializing the page:', error);
+  }
+});
+</script>
+</body>
+</html>
